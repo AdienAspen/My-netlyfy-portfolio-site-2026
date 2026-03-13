@@ -1,7 +1,3 @@
-# Portfolio Assets (Ignored per user request, typically these are needed for site deployment)
-Curriculum/
-Images/
-
 # Environment and IDE
 .vscode/
 .DS_Store
