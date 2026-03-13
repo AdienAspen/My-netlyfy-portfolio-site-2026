@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Rodrigo Donoso Yáñez</title>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .timeline-item { position: relative; padding-left: 1.5rem; margin-bottom: var(--space-lg); border-left: 2px solid var(--accent-border); }
+        .timeline-item::before { content: ''; position: absolute; left: -6px; top: 0; width: 10px; height: 10px; border-radius: 50%; background: var(--accent-primary); }
+        .timeline-date { color: var(--accent-primary); font-family: var(--font-main); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.05em; margin-bottom: var(--space-xs); display: block; text-transform: uppercase;}
+        .timeline-role { font-size: 1.15rem; margin-bottom: var(--space-xs); line-height: 1.3; }
+        .timeline-company { color: var(--text-secondary); margin-bottom: var(--space-sm); font-size: 0.95rem; font-weight: 500; }
+        .timeline-desc { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; margin-bottom: 0.5rem; }
+        .timeline-desc ul { margin-top: 0.5rem; margin-left: 1rem; list-style-type: disc; }
+        
+        .resume-section-title { font-size: 1.6rem; color: var(--text-primary); margin-bottom: var(--space-lg); border-bottom: 2px solid var(--accent-border); padding-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;}
+        
+        .skills-list { display: flex; flex-direction: column; gap: 0.8rem; }
+        .skill-item { font-size: 0.95rem; color: var(--text-secondary); }
+        .skill-item strong { color: var(--text-primary); }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AI-Machine Learning Developer</a>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="resume.html" class="active" data-i18n="nav_resume">Resume</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="lang-toggle" aria-label="Toggle language">
+                    <i class="ph ph-globe"></i> <span id="current-lang">EN</span>
+                </button>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="ph ph-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="section" style="padding-top: var(--space-xl);">
+            <!-- Header Section -->
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: var(--space-md); margin-bottom: var(--space-lg);">
+                <div>
+                    <h1 style="font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: var(--space-xs); line-height: 1.1;">Rodrigo Donoso Yáñez</h1>
+                    <h2 style="font-size: 1.5rem; color: var(--text-secondary); font-weight: 500;" data-i18n="resume_title">AI & ML Developer</h2>
+                </div>
+                <a href="Curriculum/Curric-AI-ML Develop-RDonoso-2026 (Engl).pdf" target="_blank" class="btn btn-primary" data-i18n-href="cv_file">
+                    <i class="ph ph-download-simple" style="margin-right: 0.5rem; font-size: 1.2rem;"></i> <span data-i18n="btn_download_cv">Download Resume</span>
+                </a>
+            </div>
+
+            <!-- Contact Bar -->
+            <div class="matte-card" style="display: flex; flex-wrap: wrap; gap: var(--space-lg); padding: var(--space-md) var(--space-lg); margin-bottom: var(--space-xl); align-items: center; justify-content: space-between;">
+                <div style="display: flex; flex-wrap: wrap; gap: var(--space-lg);">
+                    <a href="mailto:adien.aspen@gmail.com" style="display: flex; align-items: center; gap: var(--space-xs); font-size: 0.95rem;">
+                        <i class="ph ph-envelope-simple" style="color: var(--accent-primary); font-size: 1.2rem;"></i> adien.aspen@gmail.com
+                    </a>
+                    <a href="tel:+56950722554" style="display: flex; align-items: center; gap: var(--space-xs); font-size: 0.95rem;">
+                        <i class="ph ph-phone" style="color: var(--accent-primary); font-size: 1.2rem;"></i> +56 9 507 22 554
+                    </a>
+                    <div style="display: flex; align-items: center; gap: var(--space-xs); font-size: 0.95rem;">
+                        <i class="ph ph-map-pin" style="color: var(--accent-primary); font-size: 1.2rem;"></i> Curacaví, R.M. - Chile
+                    </div>
+                </div>
+                <div style="display: flex; gap: var(--space-md);">
+                    <a href="https://www.linkedin.com/in/rodrigo-donoso-ai-developer/" target="_blank"><i class="ph ph-linkedin-logo" style="font-size: 1.2rem; color: var(--accent-primary);"></i></a>
+                    <a href="https://github.com/AdienAspen" target="_blank"><i class="ph ph-github-logo" style="font-size: 1.2rem; color: var(--accent-primary);"></i></a>
+                </div>
+            </div>
+            
+            <!-- Professional Summary -->
+            <div style="margin-bottom: var(--space-2xl);">
+                 <h3 class="resume-section-title"><i class="ph ph-user"></i> <span data-i18n="summary_title">Professional Summary</span></h3>
+                 <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.7;" data-i18n="summary_text">
+                    Junior / Semi-Senior ML & AI Developer focused on building end-to-end, production-minded systems rather than isolated models. Over the last year I have delivered two industry-relevant portfolio projects: an IELTS essay scoring system and a credit-approval decision platform, using Python, Docker and cloud platforms (Vertex AI, AWS SageMaker). I rely heavily on AI coding assistants (GPT, Claude, Gemini) to speed up implementation while I focus on system design, data contracts, evaluation and reliability. I am looking for a role where I can grow as an engineer and contribute to scalable AI solutions in close collaboration with data, platform and product teams.
+                 </p>
+            </div>
+
+            <!-- 50/50 Split -->
+            <div class="split-50-50" style="align-items: start;">
+                
+                <!-- Left Column: Experience -->
+                <div>
+                    <h3 class="resume-section-title"><i class="ph ph-briefcase"></i> <span data-i18n="res_exp">Work Experience</span></h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-date" data-i18n="date_sep_pres">Sep 2025 – Present | Remote-Independent</span>
+                            <h4 class="timeline-role" data-i18n="role_1">AI & ML Systems Developer – Independent Project</h4>
+                            <div class="timeline-company" data-i18n="comp_1">Credit-Approval Decision Platform</div>
+                            <div class="timeline-desc" data-i18n="desc_1">
+                                Planned, designed and developed an end-to-end credit-approval decision system combining multiple ML models into a single auditable decision. Factored notebooks into production-minded training scripts with versioned datasets. Built a policy-decider layer for BRMS integration (Red Hat RHPAM). Containerized the workflow with Docker for GCP/AWS deployment. Defined data contracts for Agentic workflows (LangChain).
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="timeline-date" data-i18n="date_jun_sep">Jun 2025 – Sep 2025 | Remote</span>
+                            <h4 class="timeline-role" data-i18n="role_2">AI & Machine Learning Developer – Independent Project</h4>
+                            <div class="timeline-company" data-i18n="comp_2">IELTS Essay Scoring System</div>
+                            <div class="timeline-desc" data-i18n="desc_2">
+                                Designed an automated scoring system using DeBERTa-based architecture predicting multiple traits. Owned full ML pipeline: data cleaning, splits, multi-head modeling, calibration. Migrated to scripted training for APIs. Ran experiments on Vertex AI & AWS SageMaker.
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-date" data-i18n="date_mar_jun">Mar 2025 – Jun 2025 | Remote</span>
+                            <h4 class="timeline-role" data-i18n="role_3">Junior ML & AI Engineer – Capstone Projects</h4>
+                            <div class="timeline-company" data-i18n="comp_3">IBM-Academy Generative AI Engineering</div>
+                            <div class="timeline-desc" data-i18n="desc_3">
+                                Deep Learning for tabular/time-series (PyTorch/Keras). GenAI web app (Flask + Python) with LLM API. RAG patterns & data evaluation workflows. Applied software engineering best practices: Git/GitHub, modular code, docs.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="timeline-date" data-i18n="date_dec_pres">Dec 2024 – Present | Remote</span>
+                            <h4 class="timeline-role" data-i18n="role_4">AI Trainer & Prompt Designer – Freelance</h4>
+                            <div class="timeline-company" data-i18n="comp_4">Outlier / Alignerr</div>
+                            <div class="timeline-desc" data-i18n="desc_4">
+                                Evaluated LLM outputs and provided structured feedback to improve model behavior (RLHF). Developed strong sense of LLM limitations, edge cases, and safety components.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Edu & Skills -->
+                <div>
+                    <!-- Education -->
+                    <h3 class="resume-section-title"><i class="ph ph-graduation-cap"></i> <span data-i18n="res_edu">Education & Certifications</span></h3>
+                    <div class="timeline" style="margin-bottom: var(--space-xl);">
+                        <div class="timeline-item">
+                            <span class="timeline-date" data-i18n="date_mar_jun_25">Mar 2025 – Jun 2025 | Remote</span>
+                            <h4 class="timeline-role" data-i18n="edu_1">Generative AI Engineering Specialization</h4>
+                            <div class="timeline-company" data-i18n="edu_1_comp">IBM-Academy / Coursera - Professional Certificate</div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2013</span>
+                            <h4 class="timeline-role" data-i18n="edu_2">AA in Humanities, Arts and Languages</h4>
+                            <div class="timeline-company" data-i18n="edu_2_comp">San Francisco City College - California, USA</div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">2002</span>
+                            <h4 class="timeline-role" data-i18n="edu_3">Major: Accounting - Auditing (Public Auditor)</h4>
+                            <div class="timeline-company" data-i18n="edu_3_comp">University of Santiago of Chile (USACH) - Santiago, Chile</div>
+                        </div>
+                    </div>
+
+                    <!-- Competencies -->
+                    <h3 class="resume-section-title"><i class="ph ph-cpu"></i> <span data-i18n="res_comp">Core Competencies</span></h3>
+                    <div class="skills-list" style="margin-bottom: var(--space-xl);">
+                        <div class="skill-item"><strong data-i18n="comp_prog">Programming & ML:</strong> <span data-i18n="comp_prog_desc">Python (Pandas, NumPy, scikit-learn, PyTorch), Jupyter, basic Flask APIs.</span></div>
+                        <div class="skill-item"><strong data-i18n="comp_cloud">Cloud & MLOps:</strong> <span data-i18n="comp_cloud_desc">GCP (Vertex AI), AWS (SageMaker, S3, EC2), Docker, Linux; early IaC.</span></div>
+                        <div class="skill-item"><strong data-i18n="comp_back">Backend & Data:</strong> <span data-i18n="comp_back_desc">REST-style services, JSON data contracts, SQL basics, data pipelines mindset.</span></div>
+                        <div class="skill-item"><strong data-i18n="comp_ai">AI/GenAI:</strong> <span data-i18n="comp_ai_desc">LLMs, embeddings, prompt engineering, RAG, agentic frameworks (LangChain).</span></div>
+                        <div class="skill-item"><strong data-i18n="comp_prac">Practices:</strong> <span data-i18n="comp_prac_desc">Git/GitHub, clean code, tracking, documentation, iterative cycles.</span></div>
+                    </div>
+
+                    <!-- Languages -->
+                    <h3 class="resume-section-title"><i class="ph ph-translate"></i> <span data-i18n="res_lang">Languages</span></h3>
+                    <div style="display: flex; gap: var(--space-lg); margin-bottom: var(--space-xl);">
+                        <div class="badge" style="background: transparent;">
+                            <strong data-i18n="lang_en">English:</strong> <span data-i18n="lang_fluent">Fluent-Advanced</span>
+                        </div>
+                        <div class="badge" style="background: transparent;">
+                            <strong data-i18n="lang_es">Spanish:</strong> <span data-i18n="lang_native">Native</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Double-Tier Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <div class="footer-brand">
+                    <h3 style="margin-bottom: 0;" data-i18n="footer_connect">Let's Connect</h3>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/AdienAspen" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                    <a href="https://www.linkedin.com/in/rodrigo-donoso-ai-developer/" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="https://adien-aspen-colab-ml.slack.com/archives/C09MP5F4006" target="_blank" aria-label="Slack"><i class="ph ph-slack-logo"></i></a>
+                    <a href="https://t.me/adienaspen" target="_blank" aria-label="Telegram"><i class="ph ph-telegram-logo"></i></a>
+                    <a href="mailto:adien.aspen@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <p>&copy; 2026 Rodrigo Donoso Yáñez | AI/ML Developer</p>
+                <p data-i18n="footer_tagline">Building intelligent solutions for tomorrow</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sliding Sidebar Profile Metadata -->
+    <div id="profileSidebar" class="profile-sidebar">
+        <div class="sidebar-tab" id="sidebarTab">
+            <span data-i18n="tab_profile">PROFILE</span>
+        </div>
+        <div class="sidebar-content">
+            <h4 style="font-size: 1.1rem; margin-bottom: var(--space-sm); color: var(--text-primary); border-bottom: 1px solid var(--accent-border); padding-bottom: 0.5rem;" data-i18n="meta_interests">Main Interests</h4>
+            <div class="badges" style="margin-bottom: var(--space-lg);">
+                <span class="badge" style="border-radius: 4px; border-color: var(--accent-border);" data-i18n="int_strat">Strategic Communication</span>
+                <span class="badge" style="border-radius: 4px; border-color: var(--accent-border);" data-i18n="int_journ">Journalism & Social Media</span>
+                <span class="badge" style="border-radius: 4px; border-color: var(--accent-border);" data-i18n="int_music">Music</span>
+                <span class="badge" style="border-radius: 4px; border-color: var(--accent-border);" data-i18n="int_mkt">Marketing</span>
+                <span class="badge" style="border-radius: 4px; border-color: var(--accent-primary);" data-i18n="int_genai">Generative AI</span>
+                <span class="badge" style="border-radius: 4px; border-color: var(--accent-primary);" data-i18n="int_ml">Machine Learning</span>
+                <span class="badge" style="border-radius: 4px; border-color: var(--accent-border);" data-i18n="int_feat">Feature Writing</span>
+                <span class="badge" style="border-radius: 4px; border-color: var(--accent-border);" data-i18n="int_lang">Languages</span>
+                <span class="badge" style="border-radius: 4px; border-color: var(--accent-border);" data-i18n="int_res">Researching</span>
+                <span class="badge" style="border-radius: 4px; border-color: var(--accent-border);" data-i18n="int_photo">Photography</span>
+                <span class="badge" style="border-radius: 4px; border-color: var(--accent-border);" data-i18n="int_run">10K Running</span>
+            </div>
+
+            <h4 style="font-size: 1.1rem; margin-bottom: var(--space-sm); color: var(--text-primary); border-bottom: 1px solid var(--accent-border); padding-bottom: 0.5rem;" data-i18n="meta_profile">Profile</h4>
+            <ul style="list-style: none; padding: 0; font-family: monospace; font-size: 0.9rem; color: var(--text-secondary);">
+                <li style="margin-bottom: 0.8rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 2px;">
+                        <span data-i18n="prof_team">TEAM PLAYER</span> <strong>38.3 %</strong>
+                    </div>
+                    <div class="mini-chart-container"><div class="mini-chart-fill" style="width: 38.3%;"></div></div>
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 2px;">
+                        <span data-i18n="prof_vent">VENTURER</span> <strong>21.7 %</strong>
+                    </div>
+                    <div class="mini-chart-container"><div class="mini-chart-fill" style="width: 21.7%;"></div></div>
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 2px;">
+                        <span data-i18n="prof_hust">HUSTLER</span> <strong>20.0 %</strong>
+                    </div>
+                    <div class="mini-chart-container"><div class="mini-chart-fill" style="width: 20.0%;"></div></div>
+                </li>
+                <li style="margin-bottom: 0.8rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 2px;">
+                        <span data-i18n="prof_comm">COMMANDER</span> <strong>20.0 %</strong>
+                    </div>
+                    <div class="mini-chart-container"><div class="mini-chart-fill" style="width: 20.0%;"></div></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/lang.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adien | AI/ML Developer</title>
+    <!-- Phosphor Icons (High Quality icons like Lovable) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AI-Machine Learning Developer</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
+                <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="resume.html" data-i18n="nav_resume">Resume</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="lang-toggle" aria-label="Toggle language">
+                    <i class="ph ph-globe"></i> <span id="current-lang">EN</span>
+                </button>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="ph ph-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="section hero" style="min-height: 80vh;">
+            <div class="split-50-50">
+                <div class="hero-content" style="max-width: 800px;">
+                    <h1 data-i18n="hero_title" style="font-size: clamp(3rem, 6vw, 4.5rem); margin-bottom: var(--space-lg);">Building <span class="gradient-text-subtle">Intelligent</span> Systems</h1>
+                    <p class="subtitle" data-i18n="hero_bio_p1" style="font-size: 1.25rem; max-width: 600px; margin-bottom: var(--space-md);">I am Adien, an AI/ML developer working at the intersection of data and possibility. My focus is on fine-tuning models for computer vision and building robust NLP pipelines.</p>
+                    <p class="subtitle" data-i18n="hero_bio_p2" style="font-size: 1.1rem; max-width: 600px; margin-bottom: var(--space-xl);">I believe the best solutions emerge when we listen first, then build with purpose, bringing curiosity and clarity to complex architectural challenges.</p>
+                    
+                    <div class="hero-actions">
+                        <a href="projects.html" class="btn btn-primary" data-i18n="btn_explore">Explore Projects</a>
+                        <a href="resume.html" class="btn btn-outline" data-i18n="btn_resume">View Resume</a>
+                    </div>
+                </div>
+                
+                <!-- Hero Abstract Image -->
+                <div class="hero-visual" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="Images/hero_ai_matte.png" alt="AI Abstract Graphic" style="width: 100%; max-width: 500px; border-radius: var(--border-radius); border: 1px solid var(--accent-border); box-shadow: 0 20px 40px rgba(0,0,0,0.6);">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section" id="about">
+            <div class="split-50-50">
+                <div class="about-image" style="display: flex; justify-content: center;">
+                    <img src="Images/Image_2.png" alt="Adien Photo" style="width: 100%; max-width: 380px; border-radius: var(--border-radius); border: 1px solid var(--accent-border); box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+                </div>
+                <div class="about-content">
+                    <h2 style="font-size: 2.2rem; margin-bottom: var(--space-md);" data-i18n="sec_about">About Me</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);" data-i18n="about_p1">I'm a passionate AI/ML emerging developer. In my short tenure as a newly IBM-ML-AI certified professional I have already been designing and deploying intelligent systems that effectively empower and positively contribute to stakeholders and market communities. My expertise spans the full machine learning lifecycle—from data preprocessing and model development to production deployment and monitoring. I thrive on solving complex problems and turning current trends topics by transforming my own research work into practical applications.</p>
+                    
+                    <h4 style="margin-bottom: 1rem; color: var(--text-primary); text-transform: uppercase; font-size: 0.85rem;" data-i18n="core_tech">Core Tech Stack</h4>
+                    <div class="badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">XGBoost</span>
+                        <span class="badge">PyTorch</span>
+                        <span class="badge">scikit-learn</span>
+                        <span class="badge">Pandas</span>
+                        <span class="badge">Feature Engineering</span>
+                        <span class="badge">Machine Learning Systems</span>
+                        <span class="badge">Decision Systems</span>
+                        <span class="badge">FastAPI</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Achievements -->
+        <section class="section" id="achievements">
+            <h2 style="font-size: 2.2rem; margin-bottom: var(--space-xl); text-align: center;" data-i18n="sec_achievements">Recent Achievements</h2>
+            <div class="split-50-50" style="row-gap: var(--space-lg); column-gap: var(--space-lg);">
+                <div class="matte-card">
+                    <i class="ph ph-medal" style="font-size: 2rem; color: var(--accent-primary); margin-bottom: var(--space-md);"></i>
+                    <h3 data-i18n="ach_1_title" style="font-size: 1.1rem; margin-bottom: var(--space-sm);">AI Decision Systems Architecture (2026)</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;" data-i18n="ach_1_desc">Completed the impelmentation of an agentic credit risk decision platform integrating machine learning models, dynamic signals, and rule-based governance to produce explainable credit decisions.</p>
+                </div>
+                <div class="matte-card">
+                    <i class="ph ph-book-open" style="font-size: 2rem; color: var(--accent-primary); margin-bottom: var(--space-md);"></i>
+                    <h3 data-i18n="ach_2_title" style="font-size: 1.1rem; margin-bottom: var(--space-sm);">Automated Essay Scoring System (AES)</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;" data-i18n="ach_2_desc">Development of a two-phase NLP pipeline for IELTS writing evaluation, combining semantic feature extraction and fine-tuned language models to analyze coherence, grammar, and lexical richness.</p>
+                </div>
+                <div class="matte-card">
+                    <i class="ph ph-pencil-simple" style="font-size: 2rem; color: var(--accent-primary); margin-bottom: var(--space-md);"></i>
+                    <h3 data-i18n="ach_3_title" style="font-size: 1.1rem; margin-bottom: var(--space-sm);">Technical Publications</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;" data-i18n="ach_3_desc">Published 2 new authored research-style engineering articles on machine learning systems, experimentation frameworks, and AI decision architectures, published on Medium and Weights & Biases.</p>
+                </div>
+                <div class="matte-card">
+                    <i class="ph ph-code" style="font-size: 2rem; color: var(--accent-primary); margin-bottom: var(--space-md);"></i>
+                    <h3 data-i18n="ach_4_title" style="font-size: 1.1rem; margin-bottom: var(--space-sm);">Open Source & Engineering Contributions</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;" data-i18n="ach_4_desc">Active contributor to open-source ecosystems including GitHub, Hugging Face, and Kaggle, with projects focused on ML systems, experimentation workflows, and AI infrastructure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section class="section" id="publications">
+            <h2 style="font-size: 2.2rem; margin-bottom: var(--space-xl); text-align: center;" data-i18n="sec_publications">Publications</h2>
+            <div style="display: flex; flex-direction: column; gap: var(--space-lg); max-width: 850px; margin: 0 auto;">
+                <article class="matte-card" style="display: flex; flex-direction: column; gap: var(--space-md);">
+                    <h3 data-i18n="pub_4_title" style="font-size: 1.25rem;">Experimentation Framework for Credit Risk Modeling (Mar, 2026)</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: -0.5rem;" data-i18n="pub_4_meta">Platform: Weights & Biases (W&B) | Focus: ML Experimentation, Feature Engineering, Model Evaluation, Risk Analytics</p>
+                    <p style="color: var(--text-secondary);" data-i18n="pub_4_desc">A technical report documenting the experimentation workflow behind risk modeling systems, including feature engineering strategies, synthetic data augmentation, and threshold optimization for decision-oriented machine learning.</p>
+                    <div style="margin-top: var(--space-sm);">
+                        <a href="https://wandb.ai/inglidesk-englishclass-institute/ielts-separated-optimized-v3/reports/Experimentation-Framework-for-Credit-Risk-Modeling--VmlldzoxNjE3OTM0Mw?accessToken=toc4vsjknu5qx4ggpesuqnwaei7r0s2byexg3qqu3rm2hfrp1gpxj1sbbedwkdjj" target="_blank" class="btn btn-outline" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;" data-i18n="pub_link_report">Read Report <i class="ph ph-arrow-up-right" style="margin-left: 0.25rem;"></i></a>
+                    </div>
+                </article>
+                <article class="matte-card" style="display: flex; flex-direction: column; gap: var(--space-md);">
+                    <h3 data-i18n="pub_3_title" style="font-size: 1.25rem;">Designing an Agentic Credit Risk Platform (Mar, 2026)</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: -0.5rem;" data-i18n="pub_3_meta">Platform: Medium | Focus: AI Systems Architecture, Machine Learning, Decision Systems, Risk Modeling</p>
+                    <p style="color: var(--text-secondary);" data-i18n="pub_3_desc">A system design article exploring how machine learning models, dynamic signals, and rule-based governance can be integrated into a modular AI decision architecture for credit risk evaluation.</p>
+                    <div style="margin-top: var(--space-sm);">
+                        <a href="https://medium.com/@adien.aspen/designing-an-agentic-credit-risk-platform-c9595f7bd6a6" target="_blank" class="btn btn-outline" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;" data-i18n="pub_link">Read Article <i class="ph ph-arrow-up-right" style="margin-left: 0.25rem;"></i></a>
+                    </div>
+                </article>
+                <article class="matte-card" style="display: flex; flex-direction: column; gap: var(--space-md);">
+                    <h3 data-i18n="pub_2_title" style="font-size: 1.25rem;">Multi-Task Learning with DeBERTa: A Practical Guide (Oct, 2025)</h3>
+                    <p style="color: var(--text-secondary);" data-i18n="pub_2_desc">A comprehensive and detailed "Report" (W&B report-like) on implementing multi-task learning architectures using DeBERTa models, covering fine-tuning strategies, loss balancing, and evaluation metrics for complex NLP scenarios.</p>
+                    <div style="margin-top: var(--space-sm);">
+                        <a href="https://api.wandb.ai/links/inglidesk-englishclass-institute/70ut6aax" target="_blank" class="btn btn-outline" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;" data-i18n="pub_link">Read Article <i class="ph ph-arrow-up-right" style="margin-left: 0.25rem;"></i></a>
+                    </div>
+                </article>
+                <article class="matte-card" style="display: flex; flex-direction: column; gap: var(--space-md);">
+                    <h3 data-i18n="pub_1_title" style="font-size: 1.25rem;">Deep Learning Optimization Techniques for NLP Tasks (Oct, 2025)</h3>
+                    <p style="color: var(--text-secondary);" data-i18n="pub_1_desc">An in-depth analysis of optimization strategies for transformer-based models, exploring adaptive learning rates, gradient clipping, and mixed precision training to enhance performance in natural language processing applications.</p>
+                    <div style="margin-top: var(--space-sm);">
+                        <a href="https://medium.com/@adien.aspen/bridging-human-and-machine-evaluation-via-two-phase-rubric-aligned-modeling-for-aes-e4fb82063c28" target="_blank" class="btn btn-outline" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;" data-i18n="pub_link">Read Article <i class="ph ph-arrow-up-right" style="margin-left: 0.25rem;"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Double-Tier Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <div class="footer-brand">
+                    <h3 style="margin-bottom: 0;" data-i18n="footer_connect">Let's Connect</h3>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/AdienAspen" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                    <a href="https://www.linkedin.com/in/rodrigo-donoso-ai-developer/" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="https://adien-aspen-colab-ml.slack.com/archives/C09MP5F4006" target="_blank" aria-label="Slack"><i class="ph ph-slack-logo"></i></a>
+                    <a href="https://t.me/adienaspen" target="_blank" aria-label="Telegram"><i class="ph ph-telegram-logo"></i></a>
+                    <a href="mailto:adien.aspen@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <p>&copy; 2026 Adien | AI/ML Developer</p>
+                <p data-i18n="footer_tagline">Building intelligent solutions for tomorrow</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
