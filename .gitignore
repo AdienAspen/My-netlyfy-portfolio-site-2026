@@ -1,6 +1,8 @@
-# Environment and IDE
-.vscode/
-.DS_Store
+# Build and Temporary
+build/
+node_modules/
+dist/
 *.log
 tmp/
-node_modules/
+.vscode/
+.DS_Store
