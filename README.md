@@ -1,6 +1,6 @@
 # AI/ML Developer Portfolio - Rodrigo Donoso Yáñez
 
-A high-performance, bilingual (EN/ES) professional portfolio featuring a modern "Matte Techno 2026" design...! This site showcases advanced AI/ML projects, research-style publications, and a comprehensive technical resume.
+A high-performance, bilingual (EN/ES) professional portfolio featuring a modern "Matte Techno 2026" design. This site showcases advanced AI/ML projects, research-style publications, and a comprehensive technical resume.
 
 ## 🚀 Key Features
 - **Bilingual Support (i18n)**: Instant toggle between English and Spanish.
